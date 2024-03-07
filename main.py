@@ -348,7 +348,7 @@ public_bot = telebot.TeleBot(public_bot_token)
 admin_bot = telebot.TeleBot(admin_bot_token)
 
 # Create a ProfileManager instance
-fivesim_token = 'eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzk1NTk3MjcsImlhdCI6MTcwODAyMzcyNywicmF5IjoiZTYzZWE1MzMyN2VmYTg2ZTEyNjAxMzNkOTQ2NWIyYWIiLCJzdWIiOjEwMDU4ODR9.BXHHrwmGsE28wGeXZ7Hvj-9xvf4ZmRYmcxrNme46Bsv-rkJrM7FVfU0rpYq3tP3NIKvWcbjtxH3R8Wm-v44q_7gNaaoqz1k1BAImpYBmrMCoem4fH8-CjaWvcLB2O4JH64iVqnM3j3uqR8-FFaYiSkJvzwo2P-P3-WNIFsvf3WIBhYIDmUjH0N5kjzU7SQ23hwwnYy1YubyX6-Zm5Dqrm85rj33TuV0-B1He7J_x2rS2tbO7bOaB3bVHPq5BHPanuTZ5_wLp2449wcTKE9xVL4QU9epRS8jl85VADkr3X4jRcv5cGf0YH5HQLNfHAhFqFbuDp-m2YXPzZOYOWDNj0w'
+fivesim_token = 'eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEzNDE0MDgsImlhdCI6MTcwOTgwNTQwOCwicmF5IjoiZTYzZWE1MzMyN2VmYTg2ZTEyNjAxMzNkOTQ2NWIyYWIiLCJzdWIiOjEwMDU4ODR9.ZFca9hzfVO-RzfXOlxpUZyi_kG9PugoypaSSOML2ibR-G2X25GQ0cTlirOVca0VK3cOyoFrc0uQc9yHZxWVFSTGagPBJF1E5t4HCj4BzFt1mPZwJt7YiLrEyXu3g1JxgJogQxy0xFXt5JxrHKhO3PumpFqBqU32NE2s7JD36gkNJgmM2lhRg-i28CgCmENEg1BJki4isQ_PadUFZOWjADiEMOaNWXJXnGoPQpz10tuxf3JP9dBokeyzkRgh4U0hkzwksAZm2GD30L51ux-2eyJ3AT6vzdmzLJjzF4hxU2KWnF1Ws6YtYM29w4Ofx_OCMnS8_PpAs0vJKvfGLlsV6Sw'
 country = 'indonesia'
 service = 'facebook'
 operator = 'virtual38'
@@ -696,7 +696,6 @@ def remove_credits_admin(message):
             admin_bot.send_message(chat_id, "Invalid chat ID or amount. Please provide valid numbers.")
     else:
         admin_bot.send_message(chat_id, "Access denied. You are not authorized to use this command.")
-
 
 
 # Start polling for both bots in separate threads
